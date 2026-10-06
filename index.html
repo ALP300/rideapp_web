@@ -49,7 +49,7 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 1.5rem;
+            padding: 1.1rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -60,7 +60,7 @@
             align-items: center;
             gap: 0.75rem;
             font-weight: 800;
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             color: var(--primary);
             text-decoration: none;
         }
@@ -68,60 +68,40 @@
         .logo-badge {
             background: var(--primary);
             color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-weight: 800;
         }
 
-        .nav-links {
+        .contact-quick {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark);
+            gap: 1.2rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s;
         }
 
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: var(--white) !important;
-            padding: 0.65rem 1.4rem;
-            border-radius: 9999px;
-            font-weight: 700;
-            transition: background 0.2s, transform 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+        .contact-quick a {
             text-decoration: none;
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
         }
 
         .hero {
             background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-            padding: 5rem 1.5rem 4rem;
+            padding: 5.5rem 1.5rem 4.5rem;
             text-align: center;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
         }
 
@@ -168,8 +148,8 @@
             gap: 0.75rem;
             background: #000;
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 12px;
+            padding: 0.8rem 1.6rem;
+            border-radius: 14px;
             text-decoration: none;
             font-size: 0.85rem;
             transition: opacity 0.2s, transform 0.2s;
@@ -292,6 +272,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
             gap: 2rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -302,23 +283,24 @@
             color: white;
             font-size: 1.3rem;
             font-weight: 800;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.35rem;
         }
 
-        .footer-links {
+        .footer-contact {
             display: flex;
-            gap: 2rem;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.95rem;
         }
 
-        .footer-links a {
-            color: #CBD5E1;
+        .footer-contact a {
+            color: #E2E8F0;
             text-decoration: none;
-            font-size: 0.95rem;
             transition: color 0.2s;
         }
 
-        .footer-links a:hover {
-            color: white;
+        .footer-contact a:hover {
+            color: #60A5FA;
         }
 
         .footer-bottom {
@@ -329,8 +311,13 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links {
+            .contact-quick {
                 display: none;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -340,15 +327,13 @@
 
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <div class="logo">
                 <div class="logo-badge">R</div>
                 <span>Ride Delivery</span>
-            </a>
-            <div class="nav-links">
-                <a href="#beneficios">Beneficios</a>
-                <a href="soporte.html">Centro de Soporte</a>
-                <a href="privacidad.html">Privacidad</a>
-                <a href="soporte.html" class="btn-primary">Contacto</a>
+            </div>
+            <div class="contact-quick">
+                <a href="mailto:ridenbny2026@gmail.com">✉️ ridenbny2026@gmail.com</a>
+                <a href="tel:+18454019828">📞 +1 (845) 401-9828</a>
             </div>
         </div>
     </header>
@@ -386,7 +371,7 @@
         </div>
     </section>
 
-    <section class="features" id="beneficios">
+    <section class="features">
         <div class="section-title">
             <h2>¿Por qué elegir Ride Delivery?</h2>
             <p>Diseñado para brindarte comodidad, agilidad y el mejor precio en cada viaje.</p>
@@ -445,13 +430,10 @@
             <div class="footer-brand">
                 <h3>Ride Delivery</h3>
                 <p>Tu plataforma líder de transporte y entregas rápidas.</p>
-                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #CBD5E1;">✉️ ridenbny2026@gmail.com</p>
-                <p style="font-size: 0.9rem; color: #CBD5E1;">📞 +1 (845) 401-9828</p>
             </div>
-            <div class="footer-links">
-                <a href="soporte.html">Soporte Técnico</a>
-                <a href="privacidad.html">Política de Privacidad</a>
-                <a href="soporte.html#contacto">Contacto</a>
+            <div class="footer-contact">
+                <a href="mailto:ridenbny2026@gmail.com">✉️ ridenbny2026@gmail.com</a>
+                <a href="tel:+18454019828">📞 +1 (845) 401-9828</a>
             </div>
         </div>
         <div class="footer-bottom">
